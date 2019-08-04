@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Movies</string>
+    <string name="retry">Retry</string>
+    <string name="type_something">Type something</string>
+    <string name="see_trailed">See tralier</string>
+</resources>
