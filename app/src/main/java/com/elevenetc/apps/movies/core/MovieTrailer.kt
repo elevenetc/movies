@@ -1,5 +1,7 @@
 package com.elevenetc.apps.movies.core
 
-data class MovieTrailer(
+open class MovieTrailer(
     val youtubeVideoId: String
 )
+
+object NoMovieTrailer : MovieTrailer("")

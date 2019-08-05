@@ -10,26 +10,86 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
-    <LinearLayout
+    <ScrollView
             android:id="@+id/content_container"
-            android:orientation="vertical"
+            android:fillViewport="true"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content">
 
-        <TextView
-                android:id="@+id/text_title"
-                tools:text="Title"
-                android:textSize="24sp"
-                android:textColor="#000000"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
-        <Button
-                android:id="@+id/btn_trailer"
-                android:text="@string/see_trailed"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+            <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp">
 
-    </LinearLayout>
+                <ImageView
+                        android:scaleType="centerCrop"
+                        android:background="@color/grey"
+                        android:id="@+id/image_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+
+                <TextView
+                        android:background="#000000"
+                        android:layout_margin="@dimen/base_padding"
+                        android:id="@+id/text_title"
+                        android:layout_gravity="bottom"
+                        tools:text="Title"
+                        android:textSize="24sp"
+                        android:textColor="#ffffff"
+                        android:padding="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+            </FrameLayout>
+
+            <TextView
+                    android:layout_marginStart="@dimen/base_padding"
+                    android:layout_marginEnd="@dimen/base_padding"
+                    android:layout_marginTop="@dimen/base_padding"
+                    android:textColor="@color/colorAccent"
+                    android:id="@+id/text_date"
+                    tools:text="10-10-2000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            <TextView
+                    android:layout_marginStart="@dimen/base_padding"
+                    android:layout_marginEnd="@dimen/base_padding"
+                    android:layout_marginTop="@dimen/base_padding_half"
+                    android:textColor="@color/colorAccent"
+                    android:id="@+id/text_genres"
+                    tools:text="Comedy, Drama"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            <TextView
+                    android:layout_marginStart="@dimen/base_padding"
+                    android:layout_marginEnd="@dimen/base_padding"
+                    android:layout_marginTop="@dimen/base_padding"
+                    android:textColor="#ffffff"
+                    android:id="@+id/text_desciption"
+                    tools:text="@tools:sample/lorem/random"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            <Button
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/base_padding"
+                    android:layout_marginEnd="@dimen/base_padding"
+                    android:layout_marginTop="@dimen/base_padding"
+                    android:layout_marginBottom="@dimen/base_padding"
+                    android:id="@+id/btn_trailer"
+                    android:text="@string/trailer_see_trailer"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
 
 </FrameLayout>

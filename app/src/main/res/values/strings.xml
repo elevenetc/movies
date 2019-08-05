@@ -1,6 +1,21 @@
 <resources>
+
+    <!-- Generic -->
     <string name="app_name">Movies</string>
     <string name="retry">Retry</string>
-    <string name="type_something">Type something</string>
-    <string name="see_trailed">See tralier</string>
+    <string name="genres">Genres: %s</string>
+    <string name="generic_error">Sorry, error happened.</string>
+    <string name="sorry">Sorry</string>
+    <string name="ok">OK</string>
+
+    <!-- Trailer Screen -->
+    <string name="trailer_see_trailer">See tralier</string>
+    <string name="trailer_no_available_trailer">There is no trailer for the movie.</string>
+
+    <!-- Details Screen -->
+    <string name="details_release_date">Release date: %s</string>
+
+    <!-- Popular Movies Screen -->
+    <string name="popular_search_hint">Search movie…</string>
+    <string name="popular_no_movies">No movies found.</string>
 </resources>
